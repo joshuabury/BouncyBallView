@@ -28,8 +28,6 @@ class BouncyBallView: UIView {
 		let temp = UITapGestureRecognizer(target: self,
 										  action: #selector(BouncyBallView.handleTap(_:)))
 		
-		temp.numberOfTapsRequired = 2
-		
 		return temp
 		
 	}()
@@ -50,6 +48,7 @@ class BouncyBallView: UIView {
 										 repeats: true)
 		
 		addGestureRecognizer(doubleTap)
+		
 	}
 	
 	override init(frame: CGRect) {
